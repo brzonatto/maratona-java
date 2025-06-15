@@ -22,6 +22,14 @@ public class Calculadora {
         return 20.0 / 10.0;
     }
 
+    public void somaVarArgs(int... numeros) {
+        int soma = 0;
+        for (int numero : numeros) {
+            soma += numero;
+        }
+        System.out.println("Soma varArgs: " + soma);
+    }
+
     public void imprimeDoisNumerosDivididos(int num1, int num2) {
         if (num2 == 0) {
             System.out.println("Divisão por zero não é permitida.");
